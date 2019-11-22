@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191119152146_initial.cs" />
+    <Compile Remove="Migrations\20191119152146_initial.Designer.cs" />
+    <Compile Remove="Migrations\20191121004707_second.cs" />
+    <Compile Remove="Migrations\20191121004707_second.Designer.cs" />
+    <Compile Remove="Migrations\20191121005854_third.cs" />
+    <Compile Remove="Migrations\20191121005854_third.Designer.cs" />
+    <Compile Remove="Migrations\20191121010243_first.cs" />
+    <Compile Remove="Migrations\20191121010243_first.Designer.cs" />
+    <Compile Remove="Migrations\20191121121633_first.cs" />
+    <Compile Remove="Migrations\20191121121633_first.Designer.cs" />
+    <Compile Remove="Migrations\20191121125911_first.cs" />
+    <Compile Remove="Migrations\20191121125911_first.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+</Project>
